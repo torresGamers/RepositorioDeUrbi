@@ -29,12 +29,30 @@ main {
 	padding-bottom: 2%;
 }
 main img {
-	width: 100%;
+	width: 90%;
 }
 section {
 	width: 94%;
 	margin: 0 auto;
 	margin-bottom: 1%;
+	display: flex;
+	margin: auto;
+}
+section figure{
+	display: flex;
+}
+section .img{
+	width:68%;
+	height: 400px;
+	margin-right: 20px;
+}
+section .img img{
+	width: 100%;
+}
+section .parrafo{	
+	width: 100%;
+    padding-left: 10%px;
+    padding-top: 95px;
 }
 footer {
 	width: 86%;
@@ -45,13 +63,13 @@ footer {
 header, nav, main, footer {
 	display: block;
 	margin: 0 auto;
-	/* z-index: 20; */
+	
 }
 h1 {
 	color: black;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
 	line-height: 60px;
 }
