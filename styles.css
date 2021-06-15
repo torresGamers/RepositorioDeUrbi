@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #e51010 url(images/moroccan-flower-dark.png) repeat fixed;
+	font-family: 'Lato', sans-serif;
+}
+header {
+	width: 90%;
+	height: auto;
+	background: rgba(9, 13, 48, 1);
+	padding: 0.3% 0 0 0;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+nav {
+	width: 100%;
+	height: auto;
+	background: rgb(79, 79, 89);
+}
+main {
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	background: grey;
+	padding-bottom: 2%;
+}
+main img {
+	width: 100%;
+}
+section {
+	width: 94%;
+	margin: 0 auto;
+	margin-bottom: 1%;
+}
+footer {
+	width: 86%;
+	height: auto;
+	background: rgb(165, 165, 165);
+	padding: 2%;
+}
+header, nav, main, footer {
+	display: block;
+	margin: 0 auto;
+}
+h1 {
+	color: black;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 60px;
+}
+h2 {
+	font-size: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	line-height: 45px;
+}
+h3 {
+	font-size: 26px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	line-height: 39px;
+}
+p {
+	font-size: 18px;
+	line-height: 27px;
+	font-family: 'Lato', sans-serif;
+}
+.modulo {
+	width: 30%;
+	height: auto;
+	background: white;
+	color: black;
+	padding: 2%;
+	float: left;
+}
+.modulo img {
+	width: 100%;
+	margin-bottom: 2%;
+}
+.cajita {
+	width: 50px;
+	height: auto;
+	padding: 2%;
+	margin: 5%;
+	background: yellow;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+}
+.cajita-orange {
+	width: 40px;
+	height: auto;
+	padding: 1%;
+	background: orange;
+	text-align: center;
+	display: inline-block;
+	position: fixed;
+	bottom: 5%;
+	right: 0;
+}
+figure {
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+figcaption {
+	font-family: 'Lato', sans-serif;
+}
+a:link, a:visited {
+	color: #fff;
+	padding: 1% 2%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+a:hover, a:active {
+	color: cyan;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/* == DISEÑO RESPONSIVE == */
+
+@media screen and (max-width: 768px) {
+
+	a:link {
+		width: 96%;
+		padding: 2%;
+	}
+	footer {
+		width: 96%;
+		text-align: center;
+	}
+	header {
+		width: 100%;
+		text-align: center;
+	}
+	nav, main {
+		width: 100%;
+	}
+	figure img, .modulo img {
+		width: 100%;
+	}
+	.modulo {
+		width: 96%;
+	}
+	.cajita-orange {
+		position: static;
+		width: 98%;
+	}
+
+} /* NO BORRAR - CIERRE DEL MEDIA QUERIES */
