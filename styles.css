@@ -5,6 +5,7 @@
 body {
 	background: #e51010 url(images/moroccan-flower-dark.png) repeat fixed;
 	font-family: 'Lato', sans-serif;
+	
 }
 header {
 	width: 90%;
@@ -44,6 +45,7 @@ footer {
 header, nav, main, footer {
 	display: block;
 	margin: 0 auto;
+	/* z-index: 20; */
 }
 h1 {
 	color: black;
@@ -97,12 +99,30 @@ p {
 	width: 40px;
 	height: auto;
 	padding: 1%;
-	background: orange;
+	background: #fff;
 	text-align: center;
 	display: inline-block;
 	position: fixed;
-	bottom: 5%;
+	bottom: 3%;
 	right: 0;
+	border-radius: 20%;
+	cursor: pointer;
+}
+.cajita-orange:hover{
+	background: rgb(197, 194, 218);
+}
+
+.cajita-orange a:hover{
+	/* display: inline-block; */
+	text-decoration: none;
+	background: rgb(193, 192, 207);
+}
+
+.cajita-orange img{
+	
+	width: 100%;
+	/* z-index: 100;
+	position: fixed; */
 }
 figure {
 	margin-bottom: 2%;
@@ -154,3 +174,25 @@ a:hover, a:active {
 	}
 
 } /* NO BORRAR - CIERRE DEL MEDIA QUERIES */
+
+/* Pie de la pagina */
+
+.pie{
+	display: flex;
+}
+footer p{
+	width: 80%;
+	font-weight: bold;
+	color: rgb(58, 55, 55);
+	padding-left: 30px;
+}
+footer .iconos{
+	display: flex;
+	width: 20%;	
+	justify-content: space-around;
+}
+footer  .iconos i{
+	cursor: pointer;
+	font-size: 30px;
+	color: rgb(58, 55, 55);
+}
